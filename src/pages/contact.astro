@@ -14,66 +14,74 @@ const metadata = {
 
   <HeroText tagline="Contact" title="Let's Connect!" />
 
-  <ContactUs
-    id="form"
-    title="Drop us a message today!"
-    subtitle="For quicker answers, explore our FAQs section. You may find the solution you're looking  for right there! If not, our support team is delighted to help you."
-    inputs={[
-      {
-        type: 'text',
-        name: 'name',
-        label: 'Name',
-      },
-      {
-        type: 'email',
-        name: 'email',
-        label: 'Email',
-      },
-    ]}
-    textarea={{
-      label: 'Message',
-    }}
-    disclaimer={{
-      label:
-        'By submitting this contact form, you acknowledge and agree to the collection of your personal information.',
-    }}
-    description="Our support team typically responds within 24 business hours."
-  />
 
-  <!-- Features2 Widget ************** -->
+
+  <!-- Features2 Widget Various contact methods -->
 
   <Features2
     title="We are here to help!"
+    columns={2}
     items={[
+      //*{
+      //  title: 'General Inquiries',
+       // description: `Chat with us for general inquiries `,
+     // },
+     // {
+      //  title: 'Contact Sales',
+      //  description:
+      //    'Chat with us for commercial related inquiries',
+     // },
+     // {
+     //   title: 'Quality Support',
+     //   description:
+     //     'Chat with us when facing quality issues',
+     // },
       {
-        title: 'General support',
-        description: `Chat with us for inquiries related to account management, website navigation, payment issues, accessing purchased templates or general questions about the website's functionality.`,
-      },
-      {
-        title: 'Contact sales',
-        description:
-          'Chat with us for questions about purchases, customization options, licensing for commercial use, inquiries about specific template, etc.',
-      },
-      {
-        title: 'Technical support',
-        description:
-          'Chat with us when facing issues like template installation, problems editing difficulties, compatibility issues with software or download errors, or other technical challenges related to using the templates.',
-      },
-      {
-        title: 'Phone',
-        description: '+1 (234) 567-890',
+        title: 'Phones',
+        description: '<a href="tel:+30 23810 88851" data-type="tel" data-id="tel:+30 23810 88851">+30 23810 88851</a><br/><a href="tel:+30 23810 72330" data-type="tel" data-id="tel:+30 23810 72330">+30 23810 72330</a><br/><a href="tel:+30 23810 27749" data-type="tel" data-id="tel:+30 23810 27749">+30 23810 27749</a>',
         icon: 'tabler:headset',
       },
       {
-        title: 'Email',
-        description: 'contact@support.com',
+        title: 'Emails',
+        description: '<a href="mailto:info@neaexfrut.gr" data-type="mailto" data-id="mailto:info@neaexfrut.gr">info@neaexfrut.gr</a><br/><a href="mailto:accounting@neaexfrut.gr" data-type="mailto" data-id="mailto:accounting@neaexfrut.gr">accounting@neaexfrut.gr</a><br/><a href="mailto:quality@neaexfrut.gr" data-type="mailto" data-id="mailto:quality@neaexfrut.gr">quality@neaexfrut.gr</a>',
         icon: 'tabler:mail',
       },
       {
-        title: 'Location',
-        description: '1234 Lorem Ipsum St, 12345, Miami, EEUU',
+        title: 'Locations on Google Maps',
+        description: '<a href="https://maps.app.goo.gl/F2Qr1xJY8dmA97Ys7" target="_blank">Accounting Office</a><br/><a href="https://maps.app.goo.gl/HuvHAUjCzpVfXrKB7" target="_blank">Skydra Packing House</a><br/><a href="https://maps.app.goo.gl/2bCKz76JTMgjw7rC7" target="_blank">Rizo Packing House</a>',
         icon: 'tabler:map-pin',
       },
+      {
+        title: 'Locations with GPS',
+        description: '<a href="https://maps.app.goo.gl/HuvHAUjCzpVfXrKB7" target="_blank"> Skydra 40.76128859776191, 22.159070006545733</a><br/><a href="https://maps.app.goo.gl/2bCKz76JTMgjw7rC7" target="_blank">Rizo 40.728941168854455, 22.130133795550368</a>',
+        icon: 'tabler:gps',
+      },
     ]}
-  />
+    />
+      <!-- HeroText Widget Contact form -->
+  <ContactUs
+  id="form"
+  title="Drop us a message today!"
+  subtitle="We are hear to help you!"
+  inputs={[
+    {
+      type: 'text',
+      name: 'name',
+      label: 'Name',
+    },
+    {
+      type: 'email',
+      name: 'email',
+      label: 'Email',
+    },
+  ]}
+  textarea={{
+    label: 'Message',
+  }}
+  disclaimer={{
+    label:
+      'By submitting this contact form, you acknowledge and agree to the collection of your personal information.',
+  }}
+  description="Our team typically responds within 24 business hours."
+/>
 </Layout>

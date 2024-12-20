@@ -15,214 +15,248 @@ const metadata = {
   <!-- Hero Widget ******************* -->
 
   <Hero
-    tagline="About us"
+    tagline=""
     image={{
       src: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80',
       alt: 'Caos Image',
     }}
   >
     <Fragment slot="title">
-      Elevate your online presence with our <br />
-      <span class="text-accent dark:text-white highlight"> Beautiful Website Templates</span>
+      Nea Exfrut S.A. <br />
+      <span class="text-accent dark:text-accent highlight"> Three Generations of Expertise</span>
     </Fragment>
-
+      
     <Fragment slot="subtitle">
-      Donec efficitur, ipsum quis congue luctus, mauris magna convallis mauris, eu auctor nisi lectus non augue. Donec
-      quis lorem non massa vulputate efficitur ac at turpis. Sed tincidunt ex a nunc convallis, et lobortis nisi tempus.
-      Suspendisse vitae nisi eget tortor luctus maximus sed non lectus.
+      Our company was founded in 1956 by Christos Sextos with main activity of packing and exporting grapes 
+      and cherries to the German market. 1991 marks the year of transitioning to the second generation of Nea Exfrut S.A. 
+      Dimitrios and Georgios, sons of Christos Sextos, took the lead in the company and expanded it by investing in new buildings, 
+      modern machinery and introducing new products. Consequently, Nea Exfrut S.A. continues its operation as a third-generation family company guided by the same core values.
     </Fragment>
   </Hero>
+  <!-- Steps2 Widget "our values" -->
 
-  <!-- Stats Widget ****************** -->
+  <Steps2
+    title="Our Values"
+    subtitle="Our main philosophy remains constant through the 65 years of operations in the fruit sector of Europe. Three Generations of Expertise with the same core values always in mind!"
+    items={[
+      {
+        title: 'Quality',
+        description:
+          'Continuous improvement of the qualitative aspects of our products by providing the best products Greece has to offer. Working with the same growers for various products enables us to have the best quality and flexibility. All our products and facilities are fully certified with the latest standards.',
+        icon: 'mdi:plant-outline',
+      },
+      {
+        title: 'Flexibility',
+        description:
+          'Using A.I. solutions with fully automatic packing allong with, we manage to have incredible flexibility. This allow us to fully meet even the toughest requirements of our clients.',
+        icon: 'mdi:arrow-decision-outline',
+      },
+      {
+        title: 'Stability',
+        description:
+          'Our stability arises from the 65 years of presence in the Greek fruit sector. Our permanent well-trained personnel plays a key role in having a stable work environment that keeps upgrading.',
+        icon: 'mdi:scale-balance',
+      },
+    ]}
+  />
+
+  <!-- Stats Widget "Statistics" -->
 
   <Stats
     title="Statistics about us"
     stats={[
-      { title: 'Offices', amount: '4' },
-      { title: 'Employees', amount: '248' },
-      { title: 'Templates', amount: '12' },
-      { title: 'Awards', amount: '24' },
+      { title: 'Packing Houses', amount: '2' },
+      { title: 'Employees', amount: '250' },
+      { title: 'Offices', amount: '3' },
+      { title: 'Certifications', amount: '9' },
     ]}
   />
-
-  <!-- Features3 Widget ************** -->
+  <!-- Features3 Widget "Our Facilities" -->
 
   <Features3
-    title="Our templates"
-    subtitle="Etiam scelerisque, enim eget vestibulum luctus, nibh mauris blandit nulla, nec vestibulum risus justo ut enim. Praesent lacinia diam et ante imperdiet euismod."
+    title="Our Facilities"
+    subtitle="Two State-of-the-art Packing Houses"
     columns={3}
     isBeforeContent={true}
     items={[
       {
-        title: 'Educational',
+        title: 'Total Area - 120.000 m2 ',
         description:
-          'Morbi faucibus luctus quam, sit amet aliquet felis tempor id. Cras augue massa, ornare quis dignissim a, molestie vel nulla.',
-        icon: 'tabler:template',
+          'Our packing houses span in a total area of 12 Hectares. This includes, covered facilities for packing, cold chambers and offices. ',
+        icon: 'mdi:surface-area',
       },
       {
-        title: 'Interior Design',
+        title: 'Total Covered Facilities - 25.000 m2 ',
         description:
-          'Vivamus porttitor, tortor convallis aliquam pretium, turpis enim consectetur elit, vitae egestas purus erat ac nunc nulla.',
-        icon: 'tabler:template',
+          'Our covered facilities incloud the packing area, cold storage, offices and staff facilities',
+        icon: 'tabler:building',
       },
       {
-        title: 'Photography',
+        title: 'Packing Area - 15.000 m2 ',
         description:
-          'Duis sed lectus in nisl vehicula porttitor eget quis odio. Aliquam erat volutpat. Nulla eleifend nulla id sem fermentum.',
-        icon: 'tabler:template',
+           'State-of-the-art packing area with the latest machines for fresh fruits',
+        icon: 'tabler:building',
       },
+      {
+        title: 'Cold Storage Area - 8.500 m2 ',
+        description:
+          'Controlled atmosphere cold sotrage with a capacity of 10.000 tons',
+        icon: 'tabler:building',
+      },
+      {
+        title: 'Offices and Staff Facilities - 1.500 m2 ',
+        description:
+          'Three different offices oversea our operations. Two staff facilities in each packing house with all the amenities',
+        icon: 'tabler:brand-office',
+      },
+      {
+        title: 'Experimental Farms ',
+        description:
+          '5 Hectares of experimental Cherries and Apricots farms.',
+        icon: 'tabler:tree',
+      },
+
     ]}
   />
 
-  <!-- Features3 Widget ************** -->
+  <!-- Features3 Widget "Our Packing Area" -->
 
   <Features3
+    title="Our Packing Areas"
+    subtitle="The latest inovations in fruit sector in terms of A.I. powered full automatic packaging."
     columns={3}
     isAfterContent={true}
     items={[
       {
-        title: 'E-commerce',
+        title: 'Three A.I. Electronic Sorting Machines',
         description:
-          'Rutrum non odio at vehicula. Proin ipsum justo, dignissim in vehicula sit amet, dignissim id quam. Sed ac tincidunt sapien.',
-        icon: 'tabler:template',
+          '3 A.I. fully electronic sorting machines for Stone Fruits and Citrus with a total capacity of 50 tons/hour. - <i>Powered by AWETA Powervision Hyperspectral</i>',
+        icon: 'tabler:ai',
       },
       {
-        title: 'Blog',
+        title: 'A.I. Electronic Sorting Machine for Cherries',
         description:
-          'Nullam efficitur volutpat sem sed fringilla. Suspendisse et enim eu orci volutpat laoreet ac vitae libero.',
-        icon: 'tabler:template',
+          'The latest evolution in cherries electronic sorting machines with a Total Capacity of 12 tons/hour - <i>Powered by <a href="https://en.unitec-group.com/" target="_blank">UNITEC CherryVision 3.5</a></i>',
+        icon: 'mdi:fruit-cherries',
       },
       {
-        title: 'Business',
+        title: 'Micro Packaging',
         description:
-          'Morbi et elit finibus, facilisis justo ut, pharetra ipsum. Donec efficitur, ipsum quis congue luctus, mauris magna.',
-        icon: 'tabler:template',
+          'Thermo Seal and Flow Wrap machines for micro-packaging like punnets with plastic wrap or thermal sealing. Packages of varrious weight (250gr - 700gr). Total Capacity of 100 pallets/day. Powered by ULMA',
+        icon: 'mdi:package-variant-closed-check',
       },
       {
-        title: 'Branding',
+        title: 'Small Packaging',
         description:
-          'Suspendisse vitae nisi eget tortor luctus maximus sed non lectus. Cras malesuada pretium placerat. Nullam venenatis dolor a ante rhoncus.',
-        icon: 'tabler:template',
+          '4 Automatic Punnet Fillers with 1gr accuracy weight checkers for Stone Fruits and Kiwis. Packages of various weights in punnets with net (700gr - 1000gr). Total Capacity of 180 pallets/day. Powered by Sorma',
+        icon: 'mdi:package-variant-closed-check',
       },
       {
-        title: 'Medical',
+        title: 'Medium Packaging',
         description:
-          'Vestibulum malesuada lacus id nibh posuere feugiat. Nam volutpat nulla a felis ultrices, id suscipit mauris congue. In hac habitasse platea dictumst.',
-        icon: 'tabler:template',
+          '8 Girsack and Net Automatic Fillers with 1gr accuracy weight checkers for Oranges and Mandarins. Packages of various weights in nets (1kg - 3kg). Total Capacity of 250 pallets/day. Powered by Sorma',
+        icon: 'mdi:package-variant-closed-check',
       },
       {
-        title: 'Fashion Design',
+        title: 'Large Packaging',
         description:
-          'Maecenas eu tellus eget est scelerisque lacinia et a diam. Aliquam velit lorem, vehicula id fermentum et, rhoncus et purus.',
-        icon: 'tabler:template',
+          '12 Manual Sorting and Packing lines for large packages (2kg - 20kg). Total Capacity of 350 pallets/day',
+        icon: 'mdi:package-variant-closed-check',
       },
     ]}
-    image={{
-      src: 'https://images.unsplash.com/photo-1504384308090-c894fdcc538d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1740&q=80',
+      image={{ 
+      src: '',
       alt: 'Colorful Image',
-    }}
+    }} 
   />
 
-  <!-- Steps2 Widget ****************** -->
+
+
+  <!-- Steps2 Widget "Certifications" -->
 
   <Steps2
-    title="Our values"
-    subtitle="Maecenas eu tellus eget est scelerisque lacinia et a diam. Aliquam velit lorem, vehicula id fermentum et, rhoncus et purus. Nulla facilisi. Vestibulum malesuada lacus."
-    items={[
-      {
-        title: 'Customer-centric approach',
-        description:
-          'Donec id nibh neque. Quisque et fermentum tortor. Fusce vitae dolor a mauris dignissim commodo. Ut eleifend luctus condimentum.',
-      },
-      {
-        title: 'Constant Improvement',
-        description:
-          'Phasellus laoreet fermentum venenatis. Vivamus dapibus pulvinar arcu eget mattis. Fusce eget mauris leo.',
-      },
-      {
-        title: 'Ethical Practices',
-        description:
-          'Vestibulum imperdiet libero et lectus molestie, et maximus augue porta. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.',
-      },
-    ]}
-  />
-
-  <!-- Steps2 Widget ****************** -->
-
-  <Steps2
-    title="Achievements"
-    subtitle="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi sagittis, quam nec venenatis lobortis, mi risus tempus nulla, sed porttitor est nibh at nulla."
+    title="Quality"
+    subtitle="Following the latest standards, our company is fully certified based on 9 differend certification standards."
     isReversed={true}
     callToAction={{
-      text: 'See more',
-      href: '/',
+     // text: 'See more',
+     // href: '/',
+     icon:'mdi:tree'
     }}
     items={[
       {
-        title: 'Global reach',
-        description: 'Nam malesuada urna in enim imperdiet tincidunt. Phasellus non tincidunt nisi, at elementum mi.',
-        icon: 'tabler:globe',
+        title: 'GLOBALG.A.P. - IFA',
+        description: 'Our GLOBALG.A.P. Integrated Farm Assurance (IFA) certification helps us maintain our high-quality standards. Flexibility is accieved by having the biggest GLOBALG.A.P. Option 2 group in Greece',
+        icon: 'tabler:file-certificate',
       },
       {
-        title: 'Positive customer feedback and reviews',
-        description:
-          'Cras semper nulla leo, eget laoreet erat cursus sed. Praesent faucibus massa in purus iaculis dictum.',
-        icon: 'tabler:message-star',
-      },
-      {
-        title: 'Awards and recognition as industry experts',
+        title: 'BRCGS',
         description:
           'Phasellus lacinia cursus velit, eu malesuada magna pretium eu. Etiam aliquet tellus purus, blandit lobortis ex rhoncus vitae.',
-        icon: 'tabler:award',
+        icon: 'tabler:file-certificate',
+      },
+      {
+        title: 'IFS',
+        description:
+          'Phasellus lacinia cursus velit, eu malesuada magna pretium eu. Etiam aliquet tellus purus, blandit lobortis ex rhoncus vitae.',
+        icon: 'tabler:file-certificate',
+      },
+      {
+        title: 'GLOBALG.A.P. - CoC',
+        description:
+          'Chain of Custody certification assures our clients that all the proccess of quality assurance are implemented when working with a product that is not in our main scope.',
+        icon: 'tabler:file-certificate',
+      },
+      {
+        title: 'GLOBALG.A.P. - Grasp',
+        description:
+          'Our company, being sensitive to social issues is implementing the GRASP system for our facilities and all the growers in our Option 2 group',
+        icon: 'tabler:file-certificate',
+      },
+      {
+        title: 'SMETA 2-Pillar',
+        description:
+          'In addition to GRASP social standards audits, Nea Exfrut S.A. conducts a 2-pillar SMETA audit each year to ensure the is fully compliant with the Ethical Trading Initiative (ETI base code).',
+        icon: 'tabler:file-certificate',
+      },
+      {
+        title: 'GLOBALG.A.P. - T.N.',
+        description:
+          'Tesco Nurture GLOBALG.A.P. addon is one of our latests additions. This enables us to work with TESCO as a primary supplier',
+        icon: 'tabler:file-certificate',
+      },
+      {
+        title: 'TFS',
+        description:
+          'Tesco Food Standard is implemented in our packing houses.',
+        icon: 'tabler:file-certificate',
       },
     ]}
   />
 
-  <!-- Features2 Widget ************** -->
+  <!-- Features2 Widget "Our Locations" -->
 
   <Features2
-    title="Our locations"
+    title="Our Locations"
     tagline="Find us"
-    columns={4}
+    columns={3}
     items={[
       {
-        title: 'EE.UU',
-        description: '1234 Lorem Ipsum St, 12345, Miami',
+        title: 'Accounting Office',
+        description: '<a href="https://maps.app.goo.gl/F2Qr1xJY8dmA97Ys7" target="_blank">L. Smyrnis 1, 58200, Edessa, Greece</a><br/><a href="mailto:accounting@neaexfrut.gr" data-type="mailto" data-id="mailto:accounting@neaexfrut.gr">accounting@neaexfrut.gr</a><br/><a href="tel:+30 23810 27749" data-type="tel" data-id="tel:+30 23810 27749">+30 23810 27749</a>',
+        icon: 'mdi:book-edit-outline'
       },
       {
-        title: 'Spain',
-        description: '5678 Lorem Ipsum St, 56789, Madrid',
+        title: 'Skydra Packing House',
+        description: '<a href="https://maps.app.goo.gl/HuvHAUjCzpVfXrKB7" target="_blank">2nd Railway Crossing, Skydra 58500</a><br/><a href="mailto:info@neaexfrut.gr" data-type="mailto" data-id="mailto:info@neaexfrut.gr">info@neaexfrut.gr</a><br/><a href="tel:+30 23810 88851" data-type="tel" data-id="tel:+30 23810 88851">+30 23810 88851</a><br/>',
+        icon:'tabler:building'
       },
       {
-        title: 'Australia',
-        description: '9012 Lorem Ipsum St, 90123, Sydney',
-      },
-      {
-        title: 'Brazil',
-        description: '3456 Lorem Ipsum St, 34567, São Paulo',
+        title: 'Rizo Packing House',
+        description: '<a href="https://maps.app.goo.gl/2bCKz76JTMgjw7rC7" target="_blank">6th km Skidra - Veroia, Rizo 58500</a><br/><a href="mailto:quality@neaexfrut.gr" data-type="mailto" data-id="mailto:quality@neaexfrut.gr">quality@neaexfrut.gr</a><br/><a href="tel:+30 23810 72330" data-type="tel" data-id="tel:+30 23810 72330">+30 23810 72330</a><br/>',
+        icon:'tabler:building-estate'
       },
     ]}
   />
 
-  <!-- Features2 Widget ************** -->
-
-  <Features2
-    title="Technical Support"
-    tagline="Contact us"
-    columns={2}
-    items={[
-      {
-        title: 'Chat with us',
-        description:
-          'Integer luctus laoreet libero, auctor varius purus rutrum sit amet. Ut nec molestie nisi, quis eleifend mi.',
-        icon: 'tabler:messages',
-      },
-      {
-        title: 'Call us',
-        description:
-          'Mauris faucibus finibus orci, in posuere elit viverra non. In hac habitasse platea dictumst. Cras lobortis metus a hendrerit congue.',
-        icon: 'tabler:headset',
-      },
-    ]}
-  />
 </Layout>
